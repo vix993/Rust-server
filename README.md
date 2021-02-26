@@ -1,6 +1,6 @@
 # Rust-server
 
-This project is a template setting up a Rust pipeline.
+This project is a template setting up a Rust pipeline based on Luca Palmieri's book https://www.zero2prod.com/.
 
 It holds a docker image that executes tarpaulin in a non Linux environment.
 
