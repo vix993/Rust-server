@@ -1,5 +1,5 @@
-use zero2prod::run;
 use std::net::TcpListener;
+use zero2prod::run;
 
 #[actix_rt::test]
 async fn health_check_works() {
@@ -11,10 +11,10 @@ async fn health_check_works() {
 
     // Act
     let response = client
-            .get(&format!("{}/health_check", &address))
-            .send()
-            .await
-            .expect("Failed to execute request.");
+        .get(&format!("{}/health_check", &address))
+        .send()
+        .await
+        .expect("Failed to execute request.");
 
     // Assertions
     assert!(response.status().is_success());
